@@ -1,0 +1,54 @@
+@import "variables", "mixin", 'media-queries';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 66px; /* 117.857% */
+  @include media-small {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 46px; /* 135.294% */
+  @include media-medium {
+    font-size: 26px;
+  }
+}
+
+
+h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px; /* 136.364% */
+}
+
+.section {
+  margin-bottom: 100px;
+  @include media-medium {
+    margin-bottom: 60px;
+  }
+
+  @include media-small {
+    margin-bottom: 20px;
+  }
+}

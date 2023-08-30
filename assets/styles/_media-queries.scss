@@ -1,0 +1,28 @@
+$media-max-width-medium: 1280px;
+$media-max-width-intermediate: 1024px;
+$media-max-width-small: 768px;
+$media-max-width-extra-small: 560px;
+
+@mixin media-medium {
+  @media (max-width: $media-max-width-medium) {
+    @content;
+  }
+}
+
+@mixin media-intermediate {
+  @media (max-width: $media-max-width-intermediate) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media (max-width: $media-max-width-small) {
+    @content;
+  }
+}
+
+@mixin media-extra-small {
+  @media (max-width: $media-max-width-extra-small) {
+    @content;
+  }
+}
